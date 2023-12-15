@@ -1,12 +1,13 @@
-## Acoustic Emission Classification
+## Optimizing the Drill - Acoustic Emission Classification
 
+This repository contains the final project for the Machine Learning 2 course at FNSPE, 2023.
 
+# Authors: Barbora Bumbálková, Jan Zavadil
 
+Please open AE_classificatio_demo.ipynb to see our results. Detailed training flow of neural networks along with the development and optimization process can be seen on [WandB](https://wandb.ai/hzavadil98) page as well as the full training scripts.
 
+# Abstract
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/8Rx_0qAA)
-*Reminder*
-*   *Do not miss [deadline](https://su2.utia.cas.cz/labs.html#projects) for uploading your implementation and documentation of your final project.*
-*   *Include working demo in Colab, in which you clearly demonstrate your results. Please refer to the Implementation section on the [labs website](https://su2.utia.cas.cz/labs.html#projects).*
-*   *Do not upload huge datasets to GitHub repository.*
+The goal of this project is to find an automated, reliable and cheap method to monitor the level of sharpness of a drill in a manufacturing line in order to facilitate optimal replacement of worn bits. The chosen approach relies on the phenomenon of acoustic emission - the process of solid materials emmiting ultrasound waves during irreversible structural changes. Acoustic emission (AE) signals are measured with sensors on the surface of an object of interest during drilling, the level of drill sharpness is also recorded. In our setup, we measured AE signals with five different levels of drill sharpness, which led us to formulate a simple classification machine learning task with five classes. We deployed multiple neural network architectures relying on 1D convolutional layers to perform the featurization of measured signals followed by a fully connected network performing the classification. All classification methods implemented surpassed the results of non DNN based clyssifiers, the best classifying with accuracy of over 87%.
+
 
